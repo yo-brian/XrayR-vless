@@ -211,10 +211,10 @@ func InboundBuilder(config *Config, nodeInfo *api.NodeInfo, tag string) (*core.I
 			return nil, fmt.Errorf("marshal dest %s config fialed: %s", dest, err)
 		}
 		streamSetting.Security = "reality"
-                private_key := nodeInfo.REALITYConfig.PrivateKey
-                if private_key == "" {
-                        private_key = config.REALITYConfigs.PrivateKey
-                }
+		private_key := nodeInfo.REALITYConfig.PrivateKey
+		if private_key == "" {
+			private_key = config.REALITYConfigs.PrivateKey
+		}
 		streamSetting.REALITYSettings = &conf.REALITYConfig{
 			Show:         config.REALITYConfigs.Show,
 			Dest:         dest,

@@ -17,16 +17,23 @@
     },
     {
       "domain": [
+        "geosite:google"
+      ],
+      "outboundTag": "IPv4_out",
+      "type": "field"
+    },
+    {
+      "domain": [
         "geosite:cn"
       ],
-      "outboundTag": "block",
+      "outboundTag": "warp",
       "type": "field"
     },
     {
       "ip": [
         "geoip:cn"
       ],
-      "outboundTag": "block",
+      "outboundTag": "warp",
       "type": "field"
     },
     {
